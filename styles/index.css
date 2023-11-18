@@ -9,7 +9,7 @@
 
 }
 
-.gallery{
+.gallery {
     max-width: 700px;
     width: 100%;
     margin: auto;
@@ -30,12 +30,28 @@
 
 .main h3{
     font-style: italic;
-    font-weight: 300;
+    font-weight: 600;
     line-height: .5rem;
+    font-size: 1rem;
 }
 
 .main h1{
     line-height: .5rem;
+}
+
+.section2 {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 1rem;
+}
+
+.section2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
 }
 
 body {
