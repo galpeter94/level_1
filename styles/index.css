@@ -6,6 +6,10 @@
 }
 
 
+body {
+    background-color: white;
+}
+
 .gallery {
     max-width: 800px;
     width: 100%;
@@ -15,11 +19,47 @@
     gap: .5rem;
 }
 
-.gallery img{
+.menu {
     width: 100%;
-    height: 100%;
-    border-radius: 1rem;
+    max-width: 800px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: fit-content;
+    align-items: center;
+    margin: auto;
+}
+
+.menu .alap{
+    font-size: 10px;
+    padding: 10px;
+}
+
+.gallery p{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+
+    padding-left: 20px;
+    padding-top: 120px;
+}
+
+.gallery .eternal, .gallery .sparkling, .gallery .timeless {
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
     object-fit: cover;
+    background-size: cover;
+}
+
+.eternal {
+    background-image: url(/../pics/r1.jpg);
+}
+.sparkling {
+    background-image: url(/../pics/r2.jpg);
+}
+.timeless {
+    background-image: url(/../pics/r3.jpg);
 }
 
 .main h1, .main h3{
