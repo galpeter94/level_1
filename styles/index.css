@@ -3,6 +3,7 @@
 
 * {
     font-family: Montserrat;
+    box-sizing: border-box;
 }
 
 
@@ -11,7 +12,7 @@ body {
 }
 
 .gallery {
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     margin: auto;
     display: grid;
@@ -21,13 +22,13 @@ body {
 
 .menu {
     width: 100%;
-    max-width: 800px;
-    padding: 16px;
+    max-width: 1000px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: fit-content;
+    grid-template-columns: repeat(6, auto);
     align-items: center;
     margin: auto;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .menu .alap{
@@ -79,7 +80,7 @@ body {
 }
 
 .section2 {
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     margin: auto;
     display: grid;
@@ -100,21 +101,57 @@ body {
     line-height: 1rem;
 }
 
-.black-btn {
+.black-btn, .button_reg {
     background-color: black;
     color: white;
     display: flex;
     justify-content: center;
-    width: 100px;
+    width: 150px;
     text-align: center;
-    padding: 15px 20px;
+    padding: 10px 15px;
     border-radius: 32px;
+    border: 2px solid black;
     font-weight: 700;
     text-decoration: none;
+    font-family: Montserrat;
+    font-size: 15px;
+}
+
+.button_log {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 32px;
+    border: 2px solid black ;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
     font-family: Montserrat;
 }
 
 body {
     font-family: Monsterrat;
     padding: 1rem;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bold;
+}
+
+@media (max-width: 650px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .menu {
+        grid-template-columns: 1fr;
+    }
+    .section2 h1{
+        font-size: medium;
+    }
 }
